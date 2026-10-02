@@ -14,6 +14,8 @@ KeyBridge is not affiliated with Apple, Microsoft, Citrix, or NVIDIA.
 Open [Releases](https://github.com/ArturKD/KeyBridge/releases), select the newest alpha, and
 download the file ending in `-x64-Setup.exe` from **Assets**.
 GitHub's automatically generated source ZIP/TAR archives are not the app.
+No GitHub account or Git installation is needed. See the
+[step-by-step download and installation guide](INSTALLATION.md#fresh-installation).
 
 Requirements: Windows 10 1809 or newer, or Windows 11, on an x64 PC, with
 .NET Framework 4.8 or newer. ARM64 is not supported by this installer.
@@ -44,7 +46,9 @@ No .NET SDK or keyboard driver is required.
 | A3203 | Compact, Lock key | USB-C | Modern |
 
 These models have detection and function-row profiles in KeyBridge.
-This is not a claim that every model, transport, or firmware has been tested.
+**Physical testing has been performed only with A1843, Magic Keyboard with
+Numeric Keypad (Lightning).** All other models above are untested hardware profiles,
+not verified compatibility claims. Transport and firmware coverage is not exhaustive.
 Touch ID authentication on Windows is not provided by KeyBridge.
 
 ## Install And Update
@@ -93,3 +97,4 @@ The first public alpha is available for testing. Installation and upgrade
 validation is still in progress. This repository does not grant an
 open-source license or redistribution rights for the application.
 Explicit application distribution terms have not been finalized.
+
