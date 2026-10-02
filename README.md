@@ -31,6 +31,8 @@ No .NET SDK or keyboard driver is required.
   Print Screen shortcut. Full-size keyboards use Fn + F13 for Print Screen.
 - Device information, connection status, and battery information when available.
 - System tray operation and optional launch at Windows sign-in.
+- In-app feedback with one message field and an optional diagnostic event log.
+- Update discovery and an Update button for newer compatible releases.
 
 ## Keyboard Models
 
@@ -61,6 +63,10 @@ updating. Closing the main window may only hide it.
 Run the newer installer without uninstalling the old version first.
 Your settings and pending restart state are retained.
 
+Alpha 1 users need one manual installation of Alpha 2. Starting with Alpha 2,
+installed copies check for updates and offer an Update button when a newer
+compatible release is available. This flow is still undergoing real-PC testing.
+
 See [Installation and updates](INSTALLATION.md) for details, including removal
 of an existing Windows System mapping.
 
@@ -74,15 +80,22 @@ of an existing Windows System mapping.
 - Left Win and Right Win cannot be assigned as Fn or Print Screen shortcuts.
 - Some settings pages are unavailable in the alpha.
 - Brightness and battery availability depend on the connected hardware.
-- Updates are manual. Downgrades are not supported.
+- In-app updates require a normal, non-administrator session and the standard
+  per-user installation path. Automatic rollback and downgrades are not supported.
 - Alpha installers are currently unsigned; Windows may show a SmartScreen warning.
   Do not disable antivirus or system protection to install KeyBridge.
 
 ## Feedback
 
-Use [Issues](https://github.com/ArturKD/KeyBridge/issues) and the bug-report template.
-Include the app version from **About**, Windows version, keyboard model,
-connection type, mapping mode, and steps to reproduce.
+In Alpha 2, click **Send feedback** in the app, write what happened, and press
+**Send**. No browser or account is needed. Version, Windows version, keyboard
+model, connection type, and mapping mode are included automatically. An optional,
+unchecked diagnostic attachment includes event names only, not raw logs or key traces.
+Reports are stored privately on Cloudflare for 90 days, then expire automatically.
+Desktop submission is undergoing real-PC testing.
+
+For Alpha 1 or if sending fails, use [Issues](https://github.com/ArturKD/KeyBridge/issues).
+Include the app version from **About**, keyboard model, and steps to reproduce.
 Do not publish passwords, personal information, complete settings, or unreviewed
 logs. Logs may contain local paths and device identifiers.
 
@@ -93,7 +106,7 @@ Support does not unlock features or require payment to report a problem.
 
 ## Distribution Status
 
-The first public alpha is available for testing. Installation and upgrade
+Alpha 2 is available for testing. Installation, feedback, and in-app upgrade
 validation is still in progress. This repository does not grant an
 open-source license or redistribution rights for the application.
 Explicit application distribution terms have not been finalized.
