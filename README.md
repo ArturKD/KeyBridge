@@ -11,8 +11,7 @@ KeyBridge is not affiliated with Apple, Microsoft, Citrix, or NVIDIA.
 
 ## Download
 
-The first public alpha is not available yet. Once published, open
-[Releases](https://github.com/ArturKD/KeyBridge/releases), select the newest alpha, and
+Open [Releases](https://github.com/ArturKD/KeyBridge/releases), select the newest alpha, and
 download the file ending in `-x64-Setup.exe` from **Assets**.
 GitHub's automatically generated source ZIP/TAR archives are not the app.
 
@@ -90,6 +89,7 @@ Support does not unlock features or require payment to report a problem.
 
 ## Distribution Status
 
-The first public alpha is being prepared. This repository does not grant an
+The first public alpha is available for testing. Installation and upgrade
+validation is still in progress. This repository does not grant an
 open-source license or redistribution rights for the application.
-Explicit application distribution terms must be provided before publication.
+Explicit application distribution terms have not been finalized.
