@@ -16,15 +16,34 @@ it is not a digital signature or a guarantee that software is safe.
 
 ## Fresh Installation
 
-1. Exit any running KeyBridge copy through its system tray menu.
-2. Run the installer under your normal Windows account.
-3. The app installs into `%LOCALAPPDATA%\Programs\KeyBridge`.
-4. Launch KeyBridge from the Start menu and check the detected keyboard model.
-5. Review your modifier mapping, Fn shortcut, and startup preference.
+1. Open [KeyBridge on GitHub](https://github.com/ArturKD/KeyBridge).
+2. Click **Releases** on the right side of the repository page. On a phone or
+   narrow window, scroll below the file list to find it. You can also go
+   [directly to Releases](https://github.com/ArturKD/KeyBridge/releases).
+3. Open the newest alpha release. Scroll to **Assets** and expand it if collapsed.
+4. Click the file ending in **`-x64-Setup.exe`**. For Alpha 1 this is
+   **`KeyBridge-1.1.0-alpha.1-x64-Setup.exe`**. Do not click **Code > Download ZIP**
+   or **Source code (zip/tar.gz)**: those are not the Windows installer.
+5. Open your browser's Downloads list, or the Windows Downloads folder, and
+   run the downloaded Setup file under your normal Windows account. No GitHub
+   account, Git installation, or source-code build is needed.
+6. If KeyBridge is already running, select **Exit** from its system tray menu
+   first. Closing its window may only hide it.
+7. Follow Setup and leave **Launch KeyBridge** selected. The app installs into
+   `%LOCALAPPDATA%\Programs\KeyBridge`. You can reopen it from the Start menu.
+8. Check the detected keyboard model, then choose your modifier preset and Fn shortcut.
 
 The installer does not install drivers or change Windows keyboard mappings.
 Using Windows System mapping inside the app is a separate action that requires
 administrator permission and a Windows restart.
+
+## Hardware Test Coverage
+
+This alpha has been physically tested only with **Magic Keyboard with Numeric
+Keypad, model A1843 (Lightning)**. Other listed models have detection and
+function-row profiles but have not been physically tested by the author.
+USB/Bluetooth recognition does not imply that every transport/firmware combination
+has been validated. Report unexpected behavior with other models as alpha feedback.
 
 ## Upgrade
 
@@ -67,3 +86,4 @@ a Windows System mapping, erase its recovery journal, or reboot Windows.
   source and checksum. Do not disable antivirus or system protection.
 - **Unexpected behavior:** report the version and reproduction steps through
   Issues. Review and redact logs before sharing them.
+
