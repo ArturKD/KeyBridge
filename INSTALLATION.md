@@ -8,8 +8,11 @@ not a third-party mirror. Public alpha builds are for testing, not production us
 If the release includes a SHA256 checksum, verify it with PowerShell:
 
 ```powershell
-Get-FileHash .\KeyBridge-1.1.0-alpha.2-x64-Setup.exe -Algorithm SHA256
+Get-FileHash .\KeyBridge-1.1.0-alpha.4-x64-Setup.exe -Algorithm SHA256
 ```
+
+Alpha 4 SHA256: `9102F5412CA8F1FB40765C990D0B7FAFA3704495E016B5A772A70238658A62EF`.
+For another version, use the checksum in that release's notes.
 
 A matching checksum confirms the downloaded file matches the release asset;
 it is not a digital signature or a guarantee that software is safe.
@@ -21,8 +24,8 @@ it is not a digital signature or a guarantee that software is safe.
    narrow window, scroll below the file list to find it. You can also go
    [directly to Releases](https://github.com/ArturKD/KeyBridge/releases).
 3. Open the newest alpha release. Scroll to **Assets** and expand it if collapsed.
-4. Click the file ending in **`-x64-Setup.exe`**. For Alpha 2 this is
-   **`KeyBridge-1.1.0-alpha.2-x64-Setup.exe`**. Do not click **Code > Download ZIP**
+4. Click the file ending in **`-x64-Setup.exe`**. For Alpha 4 this is
+   **`KeyBridge-1.1.0-alpha.4-x64-Setup.exe`**. Do not click **Code > Download ZIP**
    or **Source code (zip/tar.gz)**: those are not the Windows installer.
 5. Open your browser's Downloads list, or the Windows Downloads folder, and
    run the downloaded Setup file under your normal Windows account. No GitHub
@@ -49,7 +52,7 @@ has been validated. Report unexpected behavior with other models as alpha feedba
 
 ### From Alpha 1 Or A Portable Copy
 
-Alpha 1 has no updater. Follow these manual steps once to install Alpha 2.
+Alpha 1 has no updater. Follow these manual steps once to install the current release.
 
 1. Download a newer release for the same Windows user.
 2. Exit KeyBridge through the tray menu. Do not just close its window.
@@ -63,7 +66,9 @@ KeyBridge checks for updates at startup and every six hours. You can also click
 an **Update** button appears. Click it to download, verify, install, and reopen
 KeyBridge. Run the app normally, not as administrator, for in-app updating.
 Do not close it during the download. No Windows restart is requested by updating.
-This is an alpha feature and still needs end-to-end testing on an installed copy.
+An Alpha 2 to Alpha 3 in-app update was tested on a second PC, followed by a
+feedback report identifying Alpha 3. Other upgrade and failure/recovery paths
+remain under testing; this is still an alpha feature.
 If updating fails, use the manual installation steps above. There is no automatic
 rollback after a partially completed installation.
 
@@ -99,7 +104,6 @@ a Windows System mapping, erase its recovery journal, or reboot Windows.
   then retry; end users do not need the .NET SDK.
 - **Security warning:** current alpha packages are unsigned. Verify the release
   source and checksum. Do not disable antivirus or system protection.
-- **Unexpected behavior:** click Send feedback in Alpha 2 and describe what happened.
+- **Unexpected behavior:** click Send feedback in Alpha 2 or newer and describe what happened.
   Diagnostic event-log attachment is optional; private reports expire after 90 days.
   If sending fails, use Issues. Review and redact raw logs before sharing them publicly.
-
