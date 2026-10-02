@@ -4,7 +4,7 @@
 
 Use an x64 Windows 10 1809+ or Windows 11 PC with .NET Framework 4.8 or newer.
 Download the installer from [KeyBridge Releases](https://github.com/ArturKD/KeyBridge/releases),
-not a third-party mirror. No public alpha is available yet.
+not a third-party mirror. Public alpha builds are for testing, not production use.
 If the release includes a SHA256 checksum, verify it with PowerShell:
 
 ```powershell
