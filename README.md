@@ -11,6 +11,9 @@ KeyBridge is not affiliated with Apple, Microsoft, Citrix, or NVIDIA.
 
 ## Download
 
+Current release: [1.1.0-alpha.4](https://github.com/ArturKD/KeyBridge/releases/tag/v1.1.0-alpha.4).
+Installer: **`KeyBridge-1.1.0-alpha.4-x64-Setup.exe`**.
+
 Open [Releases](https://github.com/ArturKD/KeyBridge/releases), select the newest alpha, and
 download the file ending in `-x64-Setup.exe` from **Assets**.
 GitHub's automatically generated source ZIP/TAR archives are not the app.
@@ -63,9 +66,10 @@ updating. Closing the main window may only hide it.
 Run the newer installer without uninstalling the old version first.
 Your settings and pending restart state are retained.
 
-Alpha 1 users need one manual installation of Alpha 2. Starting with Alpha 2,
+Alpha 1 users need one manual installation of the current release. Starting with Alpha 2,
 installed copies check for updates and offer an Update button when a newer
-compatible release is available. This flow is still undergoing real-PC testing.
+compatible release is available. An Alpha 2 to Alpha 3 in-app update was tested
+on a second PC; this does not validate every update or recovery scenario.
 
 See [Installation and updates](INSTALLATION.md) for details, including removal
 of an existing Windows System mapping.
@@ -87,12 +91,12 @@ of an existing Windows System mapping.
 
 ## Feedback
 
-In Alpha 2, click **Send feedback** in the app, write what happened, and press
+In Alpha 2 and newer, click **Send feedback** in the app, write what happened, and press
 **Send**. No browser or account is needed. Version, Windows version, keyboard
 model, connection type, and mapping mode are included automatically. An optional,
 unchecked diagnostic attachment includes event names only, not raw logs or key traces.
 Reports are stored privately on Cloudflare for 90 days, then expire automatically.
-Desktop submission is undergoing real-PC testing.
+Feedback was received from installed Alpha 2 and Alpha 3 on a second PC.
 
 For Alpha 1 or if sending fails, use [Issues](https://github.com/ArturKD/KeyBridge/issues).
 Include the app version from **About**, keyboard model, and steps to reproduce.
@@ -106,8 +110,11 @@ Support does not unlock features or require payment to report a problem.
 
 ## Distribution Status
 
-Alpha 2 is available for testing. Installation, feedback, and in-app upgrade
-validation is still in progress. This repository does not grant an
+Alpha 4 is available for testing. It centers action notifications across the
+whole app window, removes their colored edge strip, and wraps longer messages.
+Keyboard behavior is unchanged from Alpha 3. Notification layout checks passed
+at widths 1100, 1400, and 1920; real-app verification of this change is still pending.
+Installation, feedback, and in-app upgrade testing is not exhaustive.
+This repository does not grant an
 open-source license or redistribution rights for the application.
 Explicit application distribution terms have not been finalized.
-
