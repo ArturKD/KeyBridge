@@ -1,7 +1,7 @@
 # Publication Copy
 
 Use the text below for Reddit or another community. Check its self-promotion
-rules before posting. This copy describes Alpha 2; Alpha 1 does not include
+rules before posting. This copy describes Alpha 4; Alpha 1 does not include
 in-app feedback or the updater. Do not claim end-to-end validation is complete.
 
 ## Suggested Title
@@ -24,8 +24,8 @@ not guaranteed. Modifier remapping currently affects other keyboards too.
 
 1. Open https://github.com/ArturKD/KeyBridge/releases.
 2. Open the newest alpha release and scroll to **Assets**; expand it if needed.
-3. Click the **`-x64-Setup.exe`** file. Alpha 2 is
-   `KeyBridge-1.1.0-alpha.2-x64-Setup.exe`.
+3. Click the **`-x64-Setup.exe`** file. Alpha 4 is
+   `KeyBridge-1.1.0-alpha.4-x64-Setup.exe`.
 4. Run the file from your browser's Downloads list or Windows Downloads folder.
 5. Follow Setup and launch KeyBridge. Choose a modifier preset and an Fn shortcut.
 
@@ -41,16 +41,21 @@ tray menu first, then install the newer package without uninstalling.
 Windows System mapping is optional and separately requires administrator
 permission and a Windows restart; normal installation does not.
 
-In Alpha 2, click **Send feedback**, write what went wrong, and press **Send**.
+In Alpha 2 and newer, click **Send feedback**, write what went wrong, and press **Send**.
 No browser or account is required. Basic version/keyboard/mapping metadata is
 included; an optional event-log attachment is unchecked by default. Reports are
 stored privately on Cloudflare for 90 days. Do not include personal information.
 If sending fails, use https://github.com/ArturKD/KeyBridge/issues.
 Do not upload unreviewed raw logs or complete settings files.
 
-Alpha 2 also checks for newer releases and offers an **Update** button inside
-the installed app. Alpha 1 users need one manual installation of Alpha 2 first.
-Feedback and the full update flow are still undergoing real-PC testing.
+Alpha 2 and newer also check for newer releases and offer an **Update** button inside
+the installed app. Alpha 1 users need one manual installation of the current release.
+Feedback submission and an Alpha 2 to Alpha 3 in-app update were tested on a
+second PC. Other upgrade and failure/recovery scenarios remain under testing.
+
+Alpha 4 improves action notifications: centered across the full app window,
+without a colored edge strip, with wrapping for longer messages. Keyboard
+behavior is unchanged. Notification layout was checked at three window widths;
+real-app verification of this UI change is still pending.
 
 Optional support: https://ko-fi.com/keybridgehelp. The app does not require a donation.
-
